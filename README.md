@@ -122,6 +122,8 @@ The JavaScript Agent now can be used everywhere in the application.
  
 ## Docs
 Mobile instrumentations
-[](https://github.com/domuharahap/cinema-ionic-app/blob/master/docs/ionic-cinema-mobiles.jpg)
-[](https://github.com/domuharahap/cinema-ionic-app/blob/master/docs/ionic-cinema-users.JPG)
-[](https://github.com/domuharahap/cinema-ionic-app/blob/master/docs/ionic-cinema-custom-actions.jpg)
+![Image description](https://github.com/domuharahap/cinema-ionic-app/blob/master/docs/ionic-cinema-mobiles.jpg)
+User tag
+![Image description](https://github.com/domuharahap/cinema-ionic-app/blob/master/docs/ionic-cinema-users.JPG)
+Custom Actions
+![Image description](https://github.com/domuharahap/cinema-ionic-app/blob/master/docs/ionic-cinema-custom-actions.jpg)
