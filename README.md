@@ -1,4 +1,4 @@
-# README #
+# CINEMA-IONIC-APP #
 
 This demo Ionic cinema is originally copy or based on ionic conference app, you will find some of functions, classes, objects etc is duplicated in this project.
 
@@ -9,15 +9,18 @@ Ionic cinema apps is a basic movie tickets systems, its consist of list of movie
 
 ## Table of Contents
 - [Getting Started](#getting-started)
-- [Contributing](#contributing)
 - [App Preview](#app-preview)
 - [Deploying](#deploying)
-  - [Progressive Web App](#progressive-web-app)
   - [Android](#android)
   - [iOS](#ios)
-
-
-### Getting Started
+- [Dynatrace Intrumentation](#dynatrace-instrumentation)
+  - [Install Dynatrace Cordova Plugin](#install-dynatrace-cordova-plugin)
+  - [Build Android](#build-android)
+  - [Gradle Problem](#gradle-problem)
+  - [Manual or Custom instrumentation](#manual-or-custom-instrumentation)
+- [Instrumentation Preview](#instrumentation-preview)
+  
+### Getting Started ###
 
 * [Download the installer](https://nodejs.org/) for Node LTS.
 * Install the ionic CLI globally: `npm install -g ionic cordova`
@@ -29,15 +32,15 @@ _Note: See [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-st
 
 ### Android
 
-1. Run `ionic cordova run android --prod`
+1. Run ```ionic cordova run android```
 
 ### iOS
 
-1. Run ```ionic cordova run ios --prod```
+1. Run ```ionic cordova run ios```
 
 ## Dynatrace Instrumentation
 
-### Install the Dynatrace Cordova plugin
+### Install Dynatrace Cordova Plugin
 
 Below commands is dynatrace corodova plugin installation, please refer into latest [Dynatrace-Cordova-Plugin for more details] (https://www.npmjs.com/package/dynatrace-cordova-plugin)
 
@@ -120,7 +123,7 @@ The JavaScript Agent now can be used everywhere in the application.
     dtrum.enterAction(...)
  ```
  
-## Docs
+## Instrumentation Preview
 Mobile instrumentations
 ![Image description](https://github.com/domuharahap/cinema-ionic-app/blob/master/docs/ionic-cinema-mobiles.jpg)
 
