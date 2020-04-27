@@ -1,0 +1,62 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Showtimes</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Movies</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid fixed>
+    <form>
+      <ion-item>
+        <ion-label>Select Date</ion-label>
+        <ion-datetime displayFormat="DD-MMM-YYYY" min="2020-04-22" placeholder="Select Date" (ionChange)="updateMovieShowtimes($event)" display-timezone="gmt"></ion-datetime>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Select Movie</ion-label>
+        <ion-select [interfaceOptions]="customActionSheetOptions" interface="action-sheet" placeholder="Select One" (ionChange)="selectMovie($event)">
+          <ion-select-option *ngFor="let movie of moviesSelection" value="{{movie.id}}">{{movie.title}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+      <ion-button color="primary" expand="block" (click) ="searchForm()" > Search
+        <ion-icon slot="start" name="search" ></ion-icon>
+      </ion-button>
+
+    </form>
+
+    <ion-row>
+      <ion-col *ngIf="movies != null">
+        <ion-card class="speaker-card">
+          <ion-card-header>
+            <ion-item detail="false" lines="none" class="speaker-item">
+              <ion-avatar slot="start">
+                <img [src]="movies.icon" [alt]="movies.title + ' profile picture'">
+              </ion-avatar>
+              <ion-label>
+                <h2>{{movies.title}}</h2>
+                <p>{{movies.description}}</p>
+              </ion-label>
+            </ion-item>
+          </ion-card-header>
+
+          <ion-grid fixed>
+            <ion-item lines="none">
+              <ion-button class="showtimes-btn" padding-end="2" color="light" size="large" *ngFor="let showtime of showtimes"  routerLink="/app/tabs/movies/{{movies?.id}}/showtimes/{{showtime.id}}">{{showtime.startTime | date: 'HH:mm'}}</ion-button>
+            </ion-item>
+
+          </ion-grid>
+
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

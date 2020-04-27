@@ -1,0 +1,33 @@
+<ion-content>
+  <ion-header class="ion-no-border">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-button (click)="presentPopover($event)">
+          <ion-icon slot="icon-only" ios="ellipsis-horizontal" md="ellipsis-vertical"></ion-icon>
+        </ion-button>
+      </ion-buttons>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="about-header">
+    <!-- Instead of loading an image each time the select changes, use opacity to transition them -->
+    <div class="about-image madison" [ngStyle]="location === 'madison' && {'opacity': '1'}"></div>
+    <div class="about-image austin" [ngStyle]="location === 'austin' && {'opacity': '1'}"></div>
+    <div class="about-image chicago" [ngStyle]="location === 'chicago' && {'opacity': '1'}"></div>
+    <div class="about-image seattle" [ngStyle]="location === 'seattle' && {'opacity': '1'}"></div>
+  </div>
+
+  <div class="about-info">
+    <h3 class="ion-padding-top ion-padding-start">About</h3>
+
+    <p class="ion-padding-start ion-padding-end">
+      The Ionic Movie apps is build based Conference application default template, you will found more duplicates functions object classes etc. purpose of the application is to do the dynatrace instrumentation on ionic cordova based frameworks.
+    </p>
+
+    <h3 class="ion-padding-top ion-padding-start">Details</h3>
+
+  </div>
+</ion-content>
