@@ -124,6 +124,9 @@ The JavaScript Agent now can be used everywhere in the application.
 Mobile instrumentations
 ![Image description](https://github.com/domuharahap/cinema-ionic-app/blob/master/docs/ionic-cinema-mobiles.jpg)
 
+Webview instrumentations
+![Image description](https://github.com/domuharahap/cinema-ionic-app/blob/master/docs/ionic-cinema-webview.jpg)
+
 User tag
 ![Image description](https://github.com/domuharahap/cinema-ionic-app/blob/master/docs/ionic-cinema-users.JPG)
 
