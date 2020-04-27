@@ -17,7 +17,7 @@ Ionic cinema apps is basic movie booking tickets, its consist of list of movies 
   - [iOS](#ios)
 
 
-## Getting Started
+### Getting Started
 
 * [Download the installer](https://nodejs.org/) for Node LTS.
 * Install the ionic CLI globally: `npm install -g ionic`
@@ -28,9 +28,9 @@ Ionic cinema apps is basic movie booking tickets, its consist of list of movies 
 
 _Note: See [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions) if you are running into issues when trying to install packages globally._
 
-## Contributing
+### Contributing
 
-## Deploying
+### Deploying
 
 ### Progressive Web App
 
