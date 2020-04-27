@@ -30,10 +30,13 @@ Ionic cinema apps is a basic movie tickets systems, its consist of list of movie
 
 _Note: See [How to Prevent Permissions Errors](https://docs.npmjs.com/getting-started/fixing-npm-permissions) if you are running into issues when trying to install packages globally._
 
+## App Preview
+![Image description](https://github.com/domuharahap/cinema-ionic-app/blob/master/docs/ionic-cinema-mobile-preview.JPG)
+
+## Deploy
+
 ### Android
-
 1. Run ```ionic cordova run android```
-
 ### iOS
 
 1. Run ```ionic cordova run ios```
@@ -94,7 +97,7 @@ Execute below command to download and build android and ios apps (tested: androi
 2. Run `ionic cordova build android` to download agents and build android apk
 3. Run `ionic cordova run android`
 
-### Gradle problems
+### Gradle problem
 
 Refer to supported technology and version for supporting gradle version. Tested gradle version in this project example is 5.6.4. If unsupported gradle version accounter during android build, change the version in `ProjectBuilder.js` file. Default location `Platforms > Android > Cordova > Lib > Builder` 
 
